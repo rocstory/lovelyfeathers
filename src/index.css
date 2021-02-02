@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: #3BF4FB;
+  background-image: url("./images/dark-denim-3.png");
 }
 
 code {
