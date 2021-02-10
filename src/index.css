@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gorditas&display=swap');
 
 body {
   /* margin: 0; */
@@ -29,4 +34,22 @@ code {
 .gray-paper
 {
   background-image: url("./images/clean-gray-paper.png");
+}
+
+.wiggle-hover:hover
+{
+  animation: wiggle 2.1s infinite;
+}
+
+.loading-img
+{
+  width: 2.2em;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  5% { transform: rotate(0deg); }
+  20% { transform: rotate(3deg); }
+  30% { transform: rotate(-3deg); }
+  35% { transform: rotate(0deg); }
 }

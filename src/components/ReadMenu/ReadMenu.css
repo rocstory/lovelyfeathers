@@ -1,0 +1,16 @@
+.read-menu
+{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.read-menu > *
+{
+    border: 2px solid red;
+}
+
+.rm-footer
+{
+    display: flex;
+    justify-content: space-evenly;
+}

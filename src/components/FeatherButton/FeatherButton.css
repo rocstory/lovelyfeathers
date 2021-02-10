@@ -1,0 +1,19 @@
+.feather-button
+{
+    font-family: 'Potta One' ,'Fredoka One';
+    background-color: #FDE74C;
+    border: 2px solid black;
+    border-radius: 4%;
+    box-shadow: 2px 2px 8px #333333;
+}
+    .feather-button:hover
+    {
+        cursor: pointer;
+    }
+    
+    .feather-btn-name
+    {
+        text-align: center;
+        margin-left: 2em;
+        margin-right: 2em;
+    }

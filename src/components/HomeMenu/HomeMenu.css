@@ -1,6 +1,6 @@
 .prj-title
 {
-    font-family: 'Fredoka One';
+    font-family: 'Pacifico', 'Lobster','Potta One','Fredoka One';
     color: rgb(255, 193, 37);
     text-shadow: 3px 3px black;
     /* text-shadow: 0 0 3px black; */
@@ -15,3 +15,37 @@
 {
     font-family: 'Dancing Script', cursive;
 }
+
+.home-menu > .button-container
+{
+    list-style-type: none;
+    padding: 0;
+}
+    .home-menu > .button-container > li
+    {
+
+    }
+    .home-menu > .button-container > li > button
+    {
+        border: 3px solid black;
+        margin-bottom: 10px;
+        border-radius: 3%;
+        
+        width: 22em;
+        height: 5em;
+
+        background-color: #FDE74C;
+        box-shadow: 2px 2px 8px #333333;
+
+    }
+    .home-menu > .button-container > li > button:hover
+    {
+        cursor: pointer;
+        box-shadow: none;
+    }
+    .home-menu > .button-container > li > button > p
+    {
+        margin: auto;
+        font-family: 'Potta One' ,'Fredoka One';
+        font-size: 2em;
+    }

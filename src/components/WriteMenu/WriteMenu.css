@@ -1,0 +1,24 @@
+.write-menu
+{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.write-menu > *
+{
+    /* border: 2px solid red; */
+}
+
+.write-menu-body
+{
+    /* background-color: pink; */
+    margin: auto;
+}
+
+
+.wm-footer
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 8px;
+}
