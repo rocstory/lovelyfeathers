@@ -1,0 +1,21 @@
+.final-body
+{
+    font-family: 'Oswaldo';
+    /* border: 2px solid red; */
+}
+    .final-body > h2
+    {
+        /* border: 2px solid red; */
+        margin-bottom: 0;
+    }
+    .final-body-message
+    {
+        /* border: 2px solid blue; */
+        font-size: 2em;
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+        .take-screenshot-msg
+        {
+            color: green;
+        }

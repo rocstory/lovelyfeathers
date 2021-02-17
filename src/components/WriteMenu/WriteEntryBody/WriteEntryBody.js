@@ -2,16 +2,16 @@ import React, {useState} from 'react';
 import './WriteEntryBody.css';
 import FeatherButton from "../../FeatherButton/FeatherButton";
 import loadingGif from "../../../images/loading.gif";
-import {validateFeatherCode} from "../../../controllers/featherController";
+import {getFeather} from "../../../controllers/featherController";
 import {AnimateOnChange} from 'react-animation';
 
 
 
 function WriteEntryBody(props)
 {
-    const {updateFeather} = props
+    const {update} = props
     const [featherName, setFeatherName] = useState('');
-    const [featherId, setFeatherId] = useState('');
+    const [featherCode, setFeatherCode] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const [showError, setShowError] = useState(null);
 
@@ -21,25 +21,25 @@ function WriteEntryBody(props)
         setFeatherName(value);
     }
 
-    function handleIdChange(event)
+    function handleCodeChange(event)
     {
         const {value} = event.target;
-        setFeatherId(value);
+        setFeatherCode(value);
     }
     
     async function confirmFeatherInput()
     {
         try {
-            if (!featherName || !featherId)
+            if (!featherName || !featherCode)
             {
                 throw new Error("Empty input");
             }
             // check if feather is in database
-            const isFeatherValid = await validateFeatherCode(featherName, featherId); // change to getFeatherCode
-            if (isFeatherValid)
+            const feather = await getFeather(featherName, featherCode); 
+            if (feather)
             {
-                console.log("Validated feather:", featherName, featherId);
-                updateFeather(featherName, featherId);
+                console.log("Feather:", feather);
+                update(feather);
             }
             else
             {
@@ -50,16 +50,13 @@ function WriteEntryBody(props)
         {
             console.error(err);
             setShowError(err);
-        }
-        finally
-        {
             setIsLoading(false);
         }
     }
 
     return (
         <form className="write-entry-form"
-            onClick={(e) => {e.preventDefault()}}
+            onSubmit={(e) => {e.preventDefault()}}
         >
             <label className="feather-name" htmlFor="featherName">Feather Name</label><br/>
             <input className="feather-name" 
@@ -70,14 +67,14 @@ function WriteEntryBody(props)
                 value={featherName}
             ></input><br/>
 
-            <label className="feather-id"   htmlFor="featherId">Feather ID</label><br/>
+            <label className="feather-id"   htmlFor="featherId">Feather Code</label><br/>
             <input 
                 className="feather-id"   
                 name="featherName" 
-                onChange={(e) => (handleIdChange(e))} 
+                onChange={(e) => (handleCodeChange(e))} 
                 onClick={(e) => (setShowError(null))}
                 type="text" 
-                value={featherId}
+                value={featherCode}
             ></input><br/>
             <div className="error-container">
                 {

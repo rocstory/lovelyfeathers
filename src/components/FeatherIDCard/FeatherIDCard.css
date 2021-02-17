@@ -1,0 +1,65 @@
+.feather-id-card
+{
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Oswaldo';
+
+    border-radius: 2%;
+    background: white;
+    box-shadow: 2px 2px 12px rgb(179, 177, 177);
+
+    width: 25em;
+    height: 8em;
+    margin: auto;
+}
+    .feather-id-card > h3
+    {
+        margin-top: 0; 
+        margin-bottom: 12px;
+        font-family: 'Pacifico', 'Lobster','Potta One','Fredoka One';
+    }
+
+    .card-info-container
+    {
+        margin-top: 0;
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+        .card-info
+        {
+            /* border: 2px solid blue; */
+            justify-content: left;
+            margin-right: 80px;
+        }
+            .card-info tbody > tr
+            {
+                text-align: left;
+            }
+                .card-info tbody tr > .td-bold
+                {
+                    font-weight: bold;
+                }
+        .card-info-icon
+        {
+            border-radius: 50%;
+            width: 4em;
+            height: 4em;
+            border: 2px solid black;
+            display: flex;
+            background-color: #3BF4FB;
+            box-shadow: 1px 1px 6px black;
+
+        }
+            .card-info-icon > img
+            {
+                margin: auto;
+                width: 100%;
+                height: 100%;
+                max-width: 90%;
+                max-height: 90%;
+            }
+    
+

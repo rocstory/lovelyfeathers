@@ -4,16 +4,28 @@
     grid-template-rows: auto 1fr auto;
 }
 
-.write-menu > *
-{
-    /* border: 2px solid red; */
-}
-
 .write-menu-body
 {
-    /* background-color: pink; */
     margin: auto;
 }
+    .write-body
+    {
+        width: 35em;
+        height: 20em;
+        overflow: hidden;
+        font-family: "Oswald";
+        /* border: 2px solid red; */
+    }
+
+    .message-body
+    {
+        font-family: "Oswald";
+        padding: 2px;
+    }
+        .message-body > p.message
+        {
+            font-size: 2.3em;
+        }
 
 
 .wm-footer
@@ -22,3 +34,28 @@
     justify-content: space-evenly;
     padding-bottom: 8px;
 }
+
+.loading-body
+{
+    /* border: 2px solid red; */
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+}
+    .loading-body > div.img-container
+    {
+        /* border: 2px solid green; */
+        width: 4em;
+        height: 4em;
+        margin: auto;
+    }
+    .loading-body > div.img-container img
+    {
+        /* border: 2px solid red; */
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        
+    }

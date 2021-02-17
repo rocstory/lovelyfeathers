@@ -1,0 +1,56 @@
+.prompt-body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Oswald';
+}
+    .prompt-body p.prompt
+    {
+        height: 40%;
+        font-size: 2em; 
+        margin: 0;
+    }
+
+    .prompt-body form 
+    {
+        height: 50%;
+    }
+        .user-input
+        {
+            width: 98%; 
+            height: 95%;
+            font-size: 2em;
+        }
+            .textarea-error-input
+            {
+                border: 2px solid red;
+            }
+    .user-input-details
+    {
+        height: 1.3em;
+        overflow: hidden;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+        .user-input-details > p
+        {
+            font-size: 10px;
+            margin: 0;
+        }
+            .user-input-details > .prompt-error-message
+            {
+                float: left;
+                color: red;
+            }
+
+            .user-input-details > .prompt-char-count
+            {
+                float: right;
+            }
+                .user-input-details > .error-input
+                {
+                    color: red;
+                }
+
+                

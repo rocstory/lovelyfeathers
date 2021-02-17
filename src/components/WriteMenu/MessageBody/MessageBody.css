@@ -1,0 +1,43 @@
+.message-body
+{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    .message-body > form.username-form
+    {
+        font-family: 'Oswald';
+
+    }
+
+    .username-input-details
+    {
+        /* border: 2px solid red; */
+        width: 19.8em;
+        height: 1.3em;
+        overflow: hidden;
+        margin: auto;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+        .username-input-details > p
+        {
+            font-size: 10px;
+            margin: 0;
+        }
+            .username-error-msg
+            {
+                float: left;
+                color: red;
+            }
+            .username-char-count
+            {
+                float: right;
+            }
+            .username-error-input
+            {
+                color: red;
+            }
+
+    
