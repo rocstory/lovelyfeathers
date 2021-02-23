@@ -48,8 +48,9 @@ Lovely Feathers is a web application built with React and Firebase. This project
 
 ## Reflection
 ### Story Behind The Project
-
-- Story behind the project
+### Challenges
+### Unexpected Obstacles
+### Reasons for Tools being use
 - Challenges
 - Unexpected obstacles
 - What tools you used and why? (Justify your choices)
